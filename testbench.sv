@@ -5,6 +5,7 @@
 module top;
    import uvm_pkg::*;
 
+
    reg clk;
     initial begin
       clk = 0;
