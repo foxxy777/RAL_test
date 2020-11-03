@@ -146,14 +146,14 @@ class jelly_bean_agent extends uvm_agent;
 
       jb_ap = new( .name( "jb_ap" ), .parent( this ) );
       if ( jb_agent_cfg.active == UVM_ACTIVE ) begin
-         jb_seqr = jelly_bean_sequencer::type_id::create( .name( "jb_seqr" ),
+         jb_seqr = jelly_bean_sequencer::type_id::create( .name( "jb_seqr" ),//component是需要name和层次的
                                                           .parent( this ) );
          jb_drvr = jelly_bean_driver::type_id::create( .name( "jb_drvr" ), 
                                                        .parent( this ) );
       end
       jb_mon = jelly_bean_monitor::type_id::create( .name( "jb_mon" ),
                                                     .parent( this ) );
-      jb_reg_adapter = jelly_bean_reg_adapter::type_id::create( .name( "jb_reg_adapter" ) );
+      jb_reg_adapter = jelly_bean_reg_adapter::type_id::create( .name( "jb_reg_adapter" ) );//object只要一个name就可以，不用层次
    endfunction: build_phase
 
    function void connect_phase( uvm_phase phase );
