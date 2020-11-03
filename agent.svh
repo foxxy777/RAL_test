@@ -14,7 +14,7 @@ typedef uvm_sequencer#( jelly_bean_transaction ) jelly_bean_sequencer;
 //------------------------------------------------------------------------------
 
 class jelly_bean_driver extends uvm_driver#( jelly_bean_transaction );
-   `uvm_component_utils( jelly_bean_driver )
+   `uvm_component_param_utils( jelly_bean_driver )
 
    virtual jelly_bean_if jb_if;
 
@@ -59,7 +59,7 @@ endclass: jelly_bean_driver
 //------------------------------------------------------------------------------
 
 class jelly_bean_monitor extends uvm_monitor;
-   `uvm_component_utils( jelly_bean_monitor )
+   `uvm_component_param_utils( jelly_bean_monitor )
 
    uvm_analysis_port#( jelly_bean_transaction ) jb_ap;
 
@@ -103,7 +103,7 @@ endclass: jelly_bean_monitor
 //--------------------------------------------------------------------------
 
 class jelly_bean_agent_config extends uvm_object;
-   `uvm_object_utils( jelly_bean_agent_config )
+   `uvm_object_param_utils( jelly_bean_agent_config )
 
    uvm_active_passive_enum active = UVM_ACTIVE;
    bit has_jb_fc_sub = 1; // switch to instantiate a functional coverage subscriber
@@ -120,7 +120,7 @@ endclass: jelly_bean_agent_config
 //------------------------------------------------------------------------------
 
 class jelly_bean_agent extends uvm_agent;
-   `uvm_component_utils( jelly_bean_agent )
+   `uvm_component_param_utils( jelly_bean_agent )
 
    uvm_analysis_port#( jelly_bean_transaction ) jb_ap;
      

@@ -8,7 +8,7 @@
 `include "agent.svh"
 
 class jelly_bean_fc_subscriber extends uvm_subscriber#( jelly_bean_transaction );
-   `uvm_component_utils( jelly_bean_fc_subscriber )
+   `uvm_component_param_utils( jelly_bean_fc_subscriber )
 
    jelly_bean_transaction jb_tx;
 
@@ -44,7 +44,7 @@ typedef class jelly_bean_scoreboard;
 //------------------------------------------------------------------------------
 
 class jelly_bean_sb_subscriber extends uvm_subscriber#( jelly_bean_transaction );
-   `uvm_component_utils( jelly_bean_sb_subscriber )
+   `uvm_component_param_utils( jelly_bean_sb_subscriber )
 
    function new( string name, uvm_component parent );
       super.new( name, parent );
@@ -64,7 +64,7 @@ endclass: jelly_bean_sb_subscriber
 //------------------------------------------------------------------------------
 
 class jelly_bean_scoreboard extends uvm_scoreboard;
-   `uvm_component_utils( jelly_bean_scoreboard )
+   `uvm_component_param_utils( jelly_bean_scoreboard )
 
    uvm_analysis_export#( jelly_bean_transaction ) jb_analysis_export;
    local jelly_bean_sb_subscriber jb_sb_sub;
@@ -105,7 +105,7 @@ endclass: jelly_bean_scoreboard
 //------------------------------------------------------------------------------
 
 class jelly_bean_env_config extends uvm_object;
-   `uvm_object_utils( jelly_bean_env_config )
+   `uvm_object_param_utils( jelly_bean_env_config )
 
    bit has_jb_agent = 1;
    bit has_jb_sb    = 1;
@@ -123,7 +123,7 @@ endclass: jelly_bean_env_config
 //------------------------------------------------------------------------------
 
 class jelly_bean_env extends uvm_env;
-   `uvm_component_utils( jelly_bean_env )
+   `uvm_component_param_utils( jelly_bean_env )
 
    jelly_bean_env_config    jb_env_cfg;
    jelly_bean_agent         jb_agent;

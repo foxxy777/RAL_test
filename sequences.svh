@@ -8,7 +8,7 @@
 `include "ral.svh"
 
 class jelly_bean_sequence extends uvm_sequence#( jelly_bean_transaction );
-   `uvm_object_utils( jelly_bean_sequence )
+   `uvm_object_param_utils( jelly_bean_sequence )
 
    function new( string name = "" );
       super.new( name );
@@ -31,7 +31,7 @@ endclass: jelly_bean_sequence
 //------------------------------------------------------------------------------
 
 class jelly_bean_reg_sequence extends uvm_reg_sequence;
-   `uvm_object_utils( jelly_bean_reg_sequence )
+   `uvm_object_param_utils( jelly_bean_reg_sequence )
 
    function new( string name = "" );
       super.new( name );

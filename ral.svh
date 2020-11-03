@@ -7,7 +7,7 @@
 `define RAL_SVH  
 
 class jelly_bean_recipe_reg extends uvm_reg;
-   `uvm_object_utils( jelly_bean_recipe_reg )
+   `uvm_object_param_utils( jelly_bean_recipe_reg )
 
    rand uvm_reg_field flavor;
    rand uvm_reg_field color;
@@ -79,7 +79,7 @@ endclass: jelly_bean_recipe_reg
 //------------------------------------------------------------------------------
 
 class jelly_bean_taste_reg extends uvm_reg;
-   `uvm_object_utils( jelly_bean_taste_reg )
+   `uvm_object_param_utils( jelly_bean_taste_reg )
 
    rand uvm_reg_field taste;
 
@@ -107,7 +107,7 @@ endclass: jelly_bean_taste_reg
 //------------------------------------------------------------------------------
 
 class jelly_bean_reg_block extends uvm_reg_block;
-   `uvm_object_utils( jelly_bean_reg_block )
+   `uvm_object_param_utils( jelly_bean_reg_block )
 
    rand jelly_bean_recipe_reg jb_recipe_reg;
    rand jelly_bean_taste_reg  jb_taste_reg;
@@ -140,7 +140,7 @@ endclass: jelly_bean_reg_block
 //------------------------------------------------------------------------------
 
 class jelly_bean_reg_adapter extends uvm_reg_adapter;
-   `uvm_object_utils( jelly_bean_reg_adapter )
+   `uvm_object_param_utils( jelly_bean_reg_adapter )
 
    function new( string name = "" );
       super.new( name );

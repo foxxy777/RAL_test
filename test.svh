@@ -12,7 +12,7 @@
 
 
 class jelly_bean_base_test extends uvm_test;
-   `uvm_component_utils( jelly_bean_base_test )
+   `uvm_component_param_utils( jelly_bean_base_test )
 
    jelly_bean_env          jb_env;
    jelly_bean_env_config   jb_env_cfg;
@@ -63,7 +63,7 @@ endclass: jelly_bean_base_test
 //------------------------------------------------------------------------------
 
 class jelly_bean_reg_test extends jelly_bean_base_test;
-   `uvm_component_utils( jelly_bean_reg_test )
+   `uvm_component_param_utils( jelly_bean_reg_test )
 
    function new( string name, uvm_component parent );
       super.new( name, parent );
@@ -88,7 +88,7 @@ endclass: jelly_bean_reg_test
 //------------------------------------------------------------------------------
 
 class jelly_bean_reg_hw_reset_test extends jelly_bean_base_test;
-   `uvm_component_utils( jelly_bean_reg_hw_reset_test )
+   `uvm_component_param_utils( jelly_bean_reg_hw_reset_test )
 
    function new( string name, uvm_component parent );
       super.new( name, parent );
