@@ -8,7 +8,7 @@
 `include "ral.svh"
 
 class jelly_bean_sequence extends uvm_sequence#( jelly_bean_transaction );
-   `uvm_object_param_utils( jelly_bean_sequence )
+   `uvm_object_utils( jelly_bean_sequence )
 
    function new( string name = "" );
       super.new( name );
@@ -31,7 +31,7 @@ endclass: jelly_bean_sequence
 //------------------------------------------------------------------------------
 
 class jelly_bean_reg_sequence extends uvm_reg_sequence;
-   `uvm_object_param_utils( jelly_bean_reg_sequence )
+   `uvm_object_utils( jelly_bean_reg_sequence )
 
    function new( string name = "" );
       super.new( name );
@@ -46,12 +46,15 @@ class jelly_bean_reg_sequence extends uvm_reg_sequence;
       uvm_status_e               status;
       uvm_reg_data_t             value;
 
-      $cast( jb_reg_block, model );//model是系统自带的reg_block类型，我们操作的就是这个对象，
+      $cast( jb_reg_block, model );//model是系统自带的reg_block类型，我们操作的就是这个对象.
+      //逻辑上应该是把系统的model对象，cast成我们自定义jb_reg_block形式
+      //下面是赋值 （1）把我们在body当下定义的临时变量进行赋值
       flavor     = jelly_bean_types::APPLE;
       color      = jelly_bean_types::GREEN;
       sugar_free = 0;
       sour       = 1;
-      
+      //（2）大括号里面()的说把我们赋完值的临时变量给到当下body的jb_reg_block里面
+      //（3）然后通过write_reg来把东西给到系统的model里面
       write_reg( jb_reg_block.jb_recipe_reg, status, { sour, sugar_free, color, flavor } );//应该这里是会去使用uvm库自带的op结构体，用UVM_WRITE
       read_reg( jb_reg_block.jb_taste_reg, status, value );
    endtask: body

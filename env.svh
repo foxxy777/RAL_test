@@ -105,7 +105,7 @@ endclass: jelly_bean_scoreboard
 //------------------------------------------------------------------------------
 
 class jelly_bean_env_config extends uvm_object;
-   `uvm_object_param_utils( jelly_bean_env_config )
+   `uvm_object_utils( jelly_bean_env_config )
 
    bit has_jb_agent = 1;
    bit has_jb_sb    = 1;
