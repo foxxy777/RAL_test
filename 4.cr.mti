@@ -1,0 +1,81 @@
+C:/Users/foxxy/Desktop/tutorial10/design.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/design.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+-- Compiling interface jelly_bean_if
+-- Compiling module jelly_bean_taster
+-- Importing package jelly_bean_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Warning: (vlog-2292) An included file is associated with a closed UVM package, but no closed UVM package was imported
+
+
+Top level modules:
+	jelly_bean_taster
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/ral.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/ral.svh
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/jelly_bean_if.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/jelly_bean_if.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+-- Compiling interface jelly_bean_if
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/agent.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/agent.svh
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/test.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/test.svh
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/testbench.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/testbench.sv
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+-- Compiling package testbench_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/sequences.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/sequences.svh
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/transactions.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/transactions.svh
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/foxxy/Desktop/tutorial10/env.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/env.svh
+QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
+** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+
+Top level modules:
+	--none--
+
+} {} {}}

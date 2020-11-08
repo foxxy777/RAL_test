@@ -12,33 +12,9 @@ QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
 Top level modules:
 	jelly_bean_taster
 
-} {} {}} C:/Users/foxxy/Desktop/tutorial10/ral.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/ral.svh
-QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
-** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-
-
-Top level modules:
-	--none--
-
-} {} {}} C:/Users/foxxy/Desktop/tutorial10/agent.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/agent.svh
-QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
-** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-
-
-Top level modules:
-	--none--
-
 } {} {}} C:/Users/foxxy/Desktop/tutorial10/jelly_bean_if.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/jelly_bean_if.sv
 QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
 -- Compiling interface jelly_bean_if
-
-Top level modules:
-	--none--
-
-} {} {}} C:/Users/foxxy/Desktop/tutorial10/test.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/test.svh
-QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
-** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-
 
 Top level modules:
 	--none--
@@ -53,13 +29,5 @@ QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
 
 Top level modules:
 	top
-
-} {} {}} C:/Users/foxxy/Desktop/tutorial10/transactions.svh {1 {vlog -work work -vopt -sv -stats=none C:/Users/foxxy/Desktop/tutorial10/transactions.svh
-QuestaSim-64 vlog 10.4e Compiler 2016.04 Apr  9 2016
-** Note: (vlog-2286) Using implicit +incdir+C:/questasim64_10.4e/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
-
-
-Top level modules:
-	--none--
 
 } {} {}}
